@@ -1,0 +1,71 @@
+﻿<Window x:Class="WpfCourse001.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCourse001"
+        mc:Ignorable="d"
+        Title="WPF Course 001" Height="370" Width="525" ResizeMode="NoResize">
+    <StackPanel Margin="20" Orientation="Vertical" ButtonBase.Click="ButtonBase_OnClick">
+        <StackPanel.Resources>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Margin" Value="70,10"/>
+            </Style>
+        </StackPanel.Resources>
+        <Label HorizontalAlignment="Center" FontSize="18">WPF Course 001</Label>
+        
+        <Button Content="Exercise 1" x:Name="btn_001">
+            <Button.ToolTip>
+                Egy grid-be helyezz 4 gombot.
+                Mindegyik Gombra írd rá: Press
+                Mindegyiknek legyen 10 px margója, de csak a grid szélétől
+                Ezeket igazítsd:                - fel középre
+                                                - lent középre
+                                                - jobb középre
+                                                - bal középre
+            </Button.ToolTip>    
+        </Button>
+
+        <Button Content="Exercise 2" x:Name="btn_002">
+            <Button.ToolTip>
+                Helyezzd egymás alá sorrendben a következő elemeket: TextBox, Button, TextBox
+            </Button.ToolTip>
+        </Button>
+
+        <Button Content="Exercise 3" x:Name="btn_003">
+            <Button.ToolTip>
+                Készíts egy Grid-et, amelynek 3 oszlopa és 2 sora van
+                Az oszlopok szélessége sorrendben balról jobbra: 100, akkora amekkora a szöveg, végtelen
+                Mindegyik cellájába tegyél egy TextBlock-ot tetszőleges szöveggel.
+            </Button.ToolTip>
+        </Button>
+
+        <Button Content="Exercise 4" x:Name="btn_004">
+            <Button.ToolTip>
+                Készíts egy Canvas-t
+                Rakj ki egy gombot a x:100,y:150 pozícióba
+            </Button.ToolTip>
+        </Button>
+
+        <Button Content="Exercise 5" x:Name="btn_005">
+            <Button.ToolTip>
+                Készíts egy Border-t
+                Legyen a kerete 1 pixel széles, és fekete színű
+                A Border-ben legyen egy TextBlock a neveddel
+            </Button.ToolTip>
+        </Button>
+
+        <Button Content="Exercise 6" x:Name="btn_006">
+            <Button.ToolTip>
+                Készíts egy Border-t
+                Legyen a kerete 2 pixel széles, és kék színű
+                A Border-ben helyezzd egymás alá sorrendben a következő elemeket: TextBox, Button, TextBox
+            </Button.ToolTip>
+        </Button>
+        
+        <TextBox BorderBrush="Transparent" HorizontalAlignment="Center">
+            Tip: Hover over button to show task description.
+        </TextBox>
+        
+    </StackPanel>
+</Window>
